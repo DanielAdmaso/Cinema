@@ -1,0 +1,162 @@
+.homePage {
+  text-align: center;
+}
+.homePage .table {
+  width: 70%;
+  margin: auto;
+}
+
+#pricing-table {
+  margin: 30px auto;
+  text-align: center;
+  width: 1228px;
+  zoom: 1;
+}
+
+#pricing-table:before,
+#pricing-table:after {
+  content: "";
+  display: table;
+}
+
+#pricing-table:after {
+  clear: both;
+}
+
+#pricing-table .plan {
+  font: 13px "Lucida Sans", "trebuchet MS", Arial, Helvetica;
+  background: #fff;
+  border: 1px solid #ddd;
+  color: #333;
+  padding: 20px;
+  width: 17em;
+  float: left;
+  _display: inline; /* IE6 double margin fix */
+  position: relative;
+  margin: 0 px;
+  box-shadow: 0 2px 2px -1px rgba(0, 0, 0, 0.3);
+}
+
+#pricing-table .plan:after {
+  z-index: -1;
+  position: absolute;
+  content: "";
+  bottom: 10px;
+  right: 4px;
+  width: 80%;
+  top: 80%;
+  box-shadow: 0 12px 5px rgba(0, 0, 0, 0.3);
+  transform: rotate(3deg);
+}
+
+#pricing-table .popular-plan {
+  top: -20px;
+  padding: 40px 20px;
+}
+
+#pricing-table .header {
+  position: relative;
+  font-size: 18px;
+  font-weight: normal;
+  text-transform: uppercase;
+  padding: 40px;
+  margin: -20px -20px 20px -20px;
+  border-bottom: 8px solid;
+  background-color: #eee;
+  background-image: linear-gradient(#fff, #eee);
+}
+
+#pricing-table .header:after {
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  height: 3px;
+  width: 100%;
+  content: "";
+  background-image: url(data:image/png;base64,iVBO[...]);
+}
+
+#pricing-table .popular-plan .header {
+  margin-top: -40px;
+  padding-top: 60px;
+}
+
+#pricing-table .plan1 .header {
+  border-bottom-color: #b3e03f;
+}
+
+#pricing-table .plan2 .header {
+  border-bottom-color: #7bd553;
+}
+
+#pricing-table .plan3 .header {
+  border-bottom-color: #3ad5a0;
+}
+
+#pricing-table .plan4 .header {
+  border-bottom-color: #45d0da;
+}
+
+#pricing-table .price {
+  font-size: 45px;
+}
+
+#pricing-table .monthly {
+  font-size: 13px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  color: #999;
+}
+
+/* --------------- */
+
+#pricing-table ul {
+  margin: 20px 0;
+  padding: 0;
+  list-style: none;
+}
+
+#pricing-table li {
+  padding: 10px 0;
+}
+
+/* --------------- */
+
+#pricing-table .Package {
+  cursor: pointer;
+  position: relative;
+  padding: 10px 20px;
+  color: #fff;
+  font: bold 14px Arial, Helvetica;
+  text-transform: uppercase;
+  text-decoration: none;
+  display: inline-block;
+  background-color: #72ce3f;
+  border-radius: 3px;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.15);
+  opacity: 0.9;
+}
+
+#pricing-table .addPackage:hover {
+  opacity: 1;
+}
+
+#pricing-table .addPackage:active {
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.3) inset;
+}
+
+#pricing-table .plan1 .addPackage {
+  background: #b3e03f;
+}
+
+#pricing-table .plan2 .addPackage {
+  background: #7bd553;
+}
+
+#pricing-table .plan3 .addPackage {
+  background: #3ad5a0;
+}
+
+#pricing-table .plan4 .addPackage {
+  background: #45d0da;
+}
