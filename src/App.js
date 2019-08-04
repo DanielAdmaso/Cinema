@@ -1,24 +1,24 @@
-import React, { Component } from "react";
+import React from "react";
 import "./App.css";
-import { BrowserRouter as Router } from "react-router-dom";
-import { Route, Switch } from "react-router";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 
 //import Components
-// import Layout from "./components/Layout/Layout";
-// import Movies from "./components/Movies/Movies";
 import NavBar from "./components/navBar/navBar";
+import Movies from "./components/Movies/Movies";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <div className="app">
-      <NavBar />
-      {/* <Layout>
-          <Router history={this.props.history}>
-            <Switch>
-              <Route path="/" exact component={Movies} />
-            </Switch>
-          </Router>
-        </Layout> */}
+      <Router>
+        <NavBar />
+        <div className="mybody">
+          <Switch>
+            <Route path="/" exact component={Movies} />
+          </Switch>
+        </div>
+      </Router>
+      <Footer />
     </div>
   );
 }

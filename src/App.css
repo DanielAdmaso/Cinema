@@ -1,3 +1,7 @@
+.mybody {
+  min-height: calc(100vh - 260px);
+}
+
 .App {
   text-align: center;
 }

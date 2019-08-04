@@ -1,12 +1,9 @@
 import React, { Component } from "react";
 import "./Search.css";
 class Search extends Component {
-  state = {
-    // search: ""
-  };
+  state = {};
 
   updateInput = e => {
-    // this.setState({ [e.target.name]: e.target.value });
     this.props.handleSearch(e.target.value);
   };
 

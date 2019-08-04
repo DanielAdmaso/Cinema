@@ -7,3 +7,10 @@
 .navbar-light .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.74);
 }
+
+/*----------------------------------------- Desktop Styles -----------------------------------------*/
+@media only screen and (min-width: 961px) {
+  .bg-dark {
+    height: 50px;
+  }
+}
